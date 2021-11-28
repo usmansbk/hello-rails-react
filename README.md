@@ -10,6 +10,7 @@
 
 - Ruby on Rails
 - PostgreSQL
+- React
 
 ## Live Link
 
@@ -23,7 +24,7 @@ To get a local copy up and running follow these simple example steps.
 
 - [Ruby](https://www.ruby-lang.org/en/)
 - [Rails](https://gorails.com/)
-- [React-Rails](https://github.com/reactjs/react-rails)
+- [React](https://github.com/reactjs/react-rails)
 
 ### Setup
 
