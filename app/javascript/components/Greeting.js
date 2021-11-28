@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchRandomGreeting } from "../redux/greetings";
 
 const Greeting = () => {
-  return <p>Hello world</p>;
+  const dispatch = useDispatch();
+  const { message } = useSelector((state) => state.greetings);
+
+  useEffect(() => {
+    dispatch(fetchRandomGreeting());
+  }, []);
+
+  return <h1>{message}</h1>;
 };
 
 export default Greeting;
