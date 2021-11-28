@@ -46,8 +46,8 @@ rails db:create
 ## Apply migration
 rails db:migrate
 
-# Load the schema
-rails db:schema:load
+# Seed database with 5 greetings
+rails db:seed
 ```
 
 ### Run
@@ -57,16 +57,6 @@ rails s
 ```
 
 ### Troubleshoot
-
-```sh
-### Rspec failing
-RAILS_ENV=test rake db:reset
-```
-
-```sh
-### New Scaffold
-rails g scaffold_controller model
-```
 
 ```sh
 ### Undo migration
